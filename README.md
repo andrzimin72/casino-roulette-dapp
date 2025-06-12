@@ -1,5 +1,7 @@
 # Casino Roulette dApp
 
+Among historians there are several versions of when and where the roulette appeared. According to Eric Bell, the inventor of the roulette prototype is Blaise Pascal, who developed the perpetual engine and presented the primitive shape of the roulette as a kind of similar engine. According to this version, Pascal assembled the first wheel of a spinning ball in a monastery in 1655, representing it either as a prototype of an eternal engine or as a model for solving the problem of the probability of winning a lottery with 36 tickets. The classic roulette mechanism is a hybrid of a game wheel, invented in 1720, and tables for the Italian gambling bibibi. The appearance of the steering wheel in its modern form dates from 1765. There is a version that the predecessor of roulette was some game from the time of ancient China, whose participants tried to place 37 animal figures in a magic square divided into 666 cells. This game has reached Europe, and some monk of the Dominican order decided to replace the figures of animals with numbers from 0 to 36 and place them around the circle of a rotating wheel.
+
 This is provided Solidity contract CasinoRoulette implements a basic roulette betting system on the Ethereum blockchain. Below is an explanation of its functionality, potential issues, and suggestions for improvement.
 
 Contract Overview
