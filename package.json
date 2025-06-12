@@ -1,0 +1,22 @@
+{
+  "name": "casino-roulette-dapp",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "cd frontend && npm start",
+    "test": "npx hardhat test",
+    "lint": "eslint . --ext .js",
+    "deploy": "npx hardhat run scripts/deploy.js --network goerli"
+  },
+  "dependencies": {
+    "ethers": "^5",
+    "react": "^18",
+    "web3-react": "^8"
+  },
+  "devDependencies": {
+    "chai": "^4",
+    "eslint": "^8",
+    "hardhat": "^2",
+    "@nomicfoundation/hardhat-toolbox": "^2"
+  }
+}
