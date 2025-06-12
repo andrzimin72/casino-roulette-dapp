@@ -1,11 +1,11 @@
-# 🎰 Casino Roulette dApp
+# Casino Roulette dApp
 
 A secure Ethereum-based roulette game using:
 - Solidity
 - Chainlink VRF
 - React + Ethers.js frontend
 
-## 🧰 Setup
+## Setup
 
 1. Install dependencies:
 bash
@@ -19,9 +19,9 @@ INFURA_API_KEY=your_infura_key
 bash
 npx hardhat run scripts/deploy.js --network goerli
 
-4.Fund contract with LINK via Chainlink Faucet
+4. Fund contract with LINK via Chainlink Faucet
 
-5.Start frontend
+5. Start frontend
 bash
 cd frontend
 npm install
