@@ -1,0 +1,23 @@
+casino-roulette-dapp/
+│
+├── contracts/
+│   └── CasinoRoulette.sol        # Secure contract with Chainlink VRF
+│
+├── scripts/
+│   └── deploy.js                 # Hardhat deployment script
+│
+├── frontend/                     # React frontend
+│   ├── public/
+│   └── src/
+│       ├── App.js
+│       ├── contract/
+│       │   ├── CasinoRouletteABI.json
+│       │   └── addresses.js
+│       └── components/
+│           ├── BetForm.js
+│           └── BetsList.js
+│
+├── .env                          # Environment variables
+├── hardhat.config.js             # Network and Etherscan config
+├── package.json                  # Frontend dependencies
+└── README.md                     # Setup instructions
