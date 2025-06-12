@@ -71,9 +71,13 @@ npm start
 
 Contract ABI
 After deploying, save the ABI from:
+
 artifacts/contracts/CasinoRoulette.sol/CasinoRoulette.json
+
 into:
 frontend/src/contract/CasinoRouletteABI.json
+
 Also update:
+
 frontend/src/contract/addresses.js
 with your deployed contract address.
