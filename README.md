@@ -3,10 +3,7 @@
 This is provided Solidity contract CasinoRoulette implements a basic roulette betting system on the Ethereum blockchain. Below is an explanation of its functionality, potential issues, and suggestions for improvement.
 
 Contract Overview
-This contract allows users to place bets (ether) on either:
-The color of the pocket where the ball lands (red or black);
-A specific number from 0 to 36 or 00 (represented as -1);
-After placing a bet using wager, the user must later call spin to resolve the bet using a pseudo-random number generator based on blockhashes.
+This contract allows users to place bets (ether) on either. The color of the pocket where the ball lands (red or black).A specific number from 0 to 36 or 00 (represented as -1). After placing a bet using wager, the user must later call spin to resolve the bet using a pseudo-random number generator based on blockhashes.
 
 A secure Ethereum-based roulette game using: Solidity, Chainlink VRF, React + Ethers.js frontend.
 
@@ -18,10 +15,12 @@ Events: Used to notify off-chain applications when a bet is placed or resolved.
 
 Functions:
 Constructor. Sets up color mappings for red numbers. Black is assumed to be default (0).
+
 Place Bet. Accepts ether for a bet. Validates the input based on the bet type.
+
 Resolve Bet. Uses blockhash(bet.block) to generate pseudo-randomness. Pays out if the bet wins. Deletes the bet after resolution.
-Helper Functions. Allows depositing funds into the contract.
-Allows the owner to destroy the contract and reclaim funds.
+
+Helper Functions. Allows depositing funds into the contract. Allows the owner to destroy the contract and reclaim funds.
 
 Security and Design Issues:
 1. Randomness Vulnerability
