@@ -83,5 +83,6 @@ frontend/src/contract/CasinoRouletteABI.json;
 ```
 Also update: 
 ```
-frontend/src/contract/addresses.js with your deployed contract address.
+frontend/src/contract/addresses.js
 ```
+with your deployed contract address.
