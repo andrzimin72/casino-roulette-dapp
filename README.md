@@ -28,7 +28,7 @@ Security and Design Issues:
 1. Randomness Vulnerability
 This uses blockhash of a future block (bet.block) to generate randomness. However, miners can manipulate the outcome by choosing not to publish certain blocks.
 Not secure for high-stakes gambling.
-Fix : Use a trusted randomness source like Chainlink VRF or commit-reveal schemes.
+Fix: Use a trusted randomness source like Chainlink VRF or commit-reveal schemes.
 2. Reentrancy Risk solidity
 Using transfer() is safe since it forwards only 2300 gas, but better practice is to use checks-effects-interactions pattern.
 Fix : Consider using OpenZeppelin’s Address.sendValue() with proper reentrancy guards if more complex logic is added.
@@ -52,28 +52,36 @@ The CasinoRoulette contract is a good educational example of how to build simple
 ## Setup
 
 1. Install dependencies:
-bash
+
 npm install
 
 2. Create .env file from .env.example
+
 PRIVATE_KEY=your_wallet_private_key
+
 INFURA_API_KEY=your_infura_key
 
 3. Deploy contract:
-bash
+
 npx hardhat run scripts/deploy.js --network goerli
 
 4. Fund contract with LINK via Chainlink Faucet
 
-5. Start frontend
-bash
+5. Start frontend:
+
 cd frontend
 npm install
 npm start
 
 Contract ABI
-After deploying, save the ABI from: artifacts/contracts/CasinoRoulette.sol/CasinoRoulette.json;
+After deploying, save the ABI from: 
 
-into: frontend/src/contract/CasinoRouletteABI.json;
+artifacts/contracts/CasinoRoulette.sol/CasinoRoulette.json;
 
-Also update: frontend/src/contract/addresses.js with your deployed contract address.
+into: 
+
+frontend/src/contract/CasinoRouletteABI.json;
+
+Also update: 
+
+frontend/src/contract/addresses.js with your deployed contract address.
